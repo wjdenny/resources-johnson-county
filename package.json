@@ -1,0 +1,24 @@
+{
+  "name": "resources-johnson-county",
+  "version": "1.0.0",
+  "description": "Directory of resources for New Iowans in Johnson County",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjdenny/resources-johnson-county.git"
+  },
+  "author": "Will Denny <william.denny@kirkwood.edu>",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/wjdenny/resources-johnson-county/issues"
+  },
+  "homepage": "https://github.com/wjdenny/resources-johnson-county#readme",
+  "dependencies": {
+    "js-yaml": "^3.13.1",
+    "pug": "^2.0.4",
+    "title-case": "^3.0.2"
+  }
+}
