@@ -57,7 +57,10 @@
               {% endif %}
             </div>
             <div class="section card-footer">
-              <p>{{ resource.tags | join: ", " }}</p>
+              <div class="row">
+                <div class="col-sm-1">#</div>
+                <div class="col-sm-11">{{ resource.tags | join: ", " }}</div>
+              </div>
             </div>
         </div>
         {% endfor %}
