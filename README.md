@@ -3,10 +3,15 @@
 In 2016, I took on the project of collecting and verifying information about
 social services that might be of interest to recent immigrants to our area,
 Johnson County, Iowa. That project has since been used by Kirkwood Community College's
-library and learning center. It was originally available as a shared document on
-Google Docs, but I wanted to make it available to a wider public, help
+library and learning center. It was originally available as [a shared document on
+Google
+Docs](https://docs.google.com/document/d/1EjUjH2K3kxGGxW24Bo98vRCNDxFYLBHk60y_asuiR3I/edit#heading=h.eg9f677utci3), but I wanted to make it available to a wider public, help), but I wanted to make it available to a wider public, help
 organize efforts to contribute updates to the information, and provide a tool
 that can be used in other locations as well.
+
+If you just want to use the directory, you can access the website at
+https://www.wjdenny.com/resources-johnson-county/. Otherwise, read on to see how
+you can contribute or use it for your own project.
 
 # How to contribute
 If you have ideas for better ways to present this information, please contact
@@ -22,6 +27,12 @@ or just email me.
 Please note that any text or information you contribute will be offered under
 this project's public domain dedication, which will preclude any and all
 intellectual property rights.
+
+## How to use this project as a template
+If you have a GitHub account, you can fork this project to create a copy of it
+that you own. At that point, you can make whatever changes you want.
+
+The information about the resources is located in `./_data/resources.yaml`.
 
 ## Other information
 The resources contained here is purely informational and cannot be guaranteed
