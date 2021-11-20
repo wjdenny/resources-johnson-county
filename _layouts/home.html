@@ -46,7 +46,13 @@
               {% if resource.location %}
               <div class="row">
                 <div class="col-sm-1"><span class="icon-location"></span></div>
-                <div class="col-sm-11"><a href="https://www.google.com/maps?q={{ resource.location | join: ' '}}">{{ resource.location | join: "<br />"}}</a></div>
+                <div class="col-sm-11"><a href="https://www.google.com/maps?q={{ resource.location | join: ' '}}" target="_blank">{{ resource.location | join: "<br />"}}</a></div>
+              </div>
+              {% endif %}
+              {% if resource.url %}
+              <div class="row">
+                <div class="col-sm-1"><span class="icon-link"></span></div>
+                <div class="col-sm-11"><a href="{{ resource.url }}" target="_blank">{{ resource.url | truncate: 35 }}</a></div>
               </div>
               {% endif %}
             </div>
