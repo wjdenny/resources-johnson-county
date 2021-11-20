@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/home.css"
+  </head>
+
+  <body>
+    <header class="sticky">
+      <h1>Resources for New Iowans in Johnson County</h1>
+    </header>
+
+    <section id="directory" class="container">
+      <div class="row">
+        {% for resource in site.data.resources %}
+        <div class="card col-sm-12 col-md-6 col-lg-4 shadowed">
+            <div class="section card-title">
+              <h3>{{ resource.title }}</h3>
+              <h4>{{ resource.organization }}</h4>
+            </div>
+            <div class="section card-body">
+              <p>{{ resource.note }}</p>
+            </div>
+          <div class="section card-info container">
+              {% if resource.time %}
+              <div class="row">
+                <div class="col-sm-1"><span class="icon-calendar"></span></div>
+                <div class="col-sm-11">{{ resource.time }}</div>
+              </div>
+              {% endif %}
+              {% if resource.email %}
+              <div class="row">
+                <div class="col-sm-1"><span class="icon-mail"></span></div>
+                <div class="col-sm-11"><a href="mailto:{{ resource.email }}">{{ resource.email }}</a></div>
+              </div>
+              {% endif %}
+              {% if resource.phone %}
+              <div class="row">
+                <div class="col-sm-1"><span class="icon-phone"></span></div>
+                <div class="col-sm-11"><a href="tel:{{ resource.phone | url_encode }}">{{ resource.phone }}</a></div>
+              </div>
+              {% endif %}
+              {% if resource.location %}
+              <div class="row">
+                <div class="col-sm-1"><span class="icon-location"></span></div>
+                <div class="col-sm-11"><a href="https://www.google.com/maps?q={{ resource.location | join: ' '}}">{{ resource.location | join: "<br />"}}</a></div>
+              </div>
+              {% endif %}
+            </div>
+            <div class="section card-footer">
+              <p>{{ resource.tags | join: ", " }}</p>
+            </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <footer class="sticky">
+      <section id="print">
+
+      </section>
+      <section id="contributions">
+
+      </section>
+      <section id="author">
+
+      </section>
+    </footer>
+  </body>
+</html>

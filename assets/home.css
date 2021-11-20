@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Habibi&family=Lora&family=Tinos&display=swap');
+:root {
+  --universal-border-radius: 3px;
+  --footer-back-color: #424242;
+  --card-back-color: white;
+  --card-title-back-color: #2196F3;
+  --back-color: #757575;
+
+  --ff-title: 'Habibi', serif;
+  --ff-header: 'Tinos', serif;
+  --ff-base: 'Lora', serif;
+}
+
+header { height: min(20%, 2rem)}
+h1 {
+  text-align: center;
+  font-family: var(--ff-title);
+  font-size: 1.4rem;
+  font-weight: 400;
+  /* overflow-wrap: break-word; */
+}
+
+
+body { font-family: var(--ff-base); }
+.card {
+  align-self: unset;
+  width: min(90%, 20rem);
+}
+
+h2,
+h3,
+h4,
+h6 {
+  font-family: var(--ff-header);
+  line-height: 1rem;
+}
+
+h2 { font-size: 1.3rem }
+h3 { font-size: 1.2rem }
+h4 { font-size: 1.1rem; font-style: italic; }
+
+#directory .row { justify-content: center }
+
+.card-title { background-color: var(--card-title-back-color) !important; }
+.card-footer { }
+.card-body { flex: 1; }
+
+.icon-location + span { margin-left: 1rem; display: inline; }
