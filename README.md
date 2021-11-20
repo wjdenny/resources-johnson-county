@@ -13,7 +13,7 @@ If you just want to use the directory, you can access the website at
 https://www.wjdenny.com/resources-johnson-county/. Otherwise, read on to see how
 you can contribute or use it for your own project.
 
-# How to contribute
+## How to contribute
 If you have ideas for better ways to present this information, please contact
 me directly at <will@wjdenny.com>. If you have information that should be
 included in this and know how to work in GitHub and with YAML data files, you
@@ -43,3 +43,12 @@ This work is licensed under the Creative Commons Zero v1.0 International Public
 Domain Dedication license. To view a copy of this license, visit
 [https://creativecommons.org/publicdomain/zero/1.0] or see the LICENSE file in
 this project's directory.
+
+## Acknowledgements
+In no particular order, these are the projects and people whose work helped me
+complete this project.
+
+* [fontjoy](https://fontjoy.com/)
+* [mini.css](https://minicss.org/)
+* [Random Material Palette Generator](https://www.threebu.it/random-material-palette/)
+* [Kevin Powell](https://www.youtube.com/watch?v=bn-DQCifeQQ)
