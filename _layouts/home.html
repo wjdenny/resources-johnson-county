@@ -3,9 +3,9 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/home.css"
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/home.css" />
   </head>
 
   <body>
@@ -40,7 +40,7 @@
               {% if resource.phone %}
               <div class="row">
                 <div class="col-sm-1"><span class="icon-phone"></span></div>
-                <div class="col-sm-11"><a href="tel:{{ resource.phone | url_encode }}">{{ resource.phone }}</a></div>
+                <div class="col-sm-11"><a href="tel:{{ resource.phone | url_encode }}">{{ resource.phone | replace: ",", ", ext. " }}</a></div>
               </div>
               {% endif %}
               {% if resource.location %}
