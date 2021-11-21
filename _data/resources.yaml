@@ -64,7 +64,7 @@
     - basic english
     - english for academic purposes
   organization: Kirkwood Community College
-  location: |
+  location:
     - Iowa City Public Library
     - Study Room B
   note: >
@@ -90,15 +90,185 @@
 - title: English Conversation Group
   organization: Iowa City Public Library
   tags:
-    - conversation groups
-    - english for academic purposes
+    - conversation
+    - english
   note: >
     Free conversation group, open to the public at the Iowa City Public Library.
-    Ideal for intermediate and above. Meets in Meeting Room E (Second floor).
+    Ideal for intermediate and above. Meets in Meeting Room E (second floor).
   location:
     - Iowa City Public Library
     - 123 S. Linn St.
     - Iowa City, IA 52240
-  phone: "(319) 887-3656"
+  phone: (319) 887-3656
   time: Fridays 10:00am&ndash;11:30am
   url: https://www.icpl.org/events/series/english-conversation-club
+
+- title: English Conversation Group
+  organization: Iowa City Senior Center
+  tags:
+    - conversation
+    - english
+  note: >
+    Free conversation group, open to the public. Ideal for intermediate and above.
+    Meets on the mezzanine.
+  time: Tuesdays, 10:00am&ndash;11:30am
+  location:
+    - Iowa City Senior Center
+    - 28 S Linn St.
+    - Iowa City, IA 52240
+  phone: (319) 887-3656
+  email: srcenter@iowa-city.org
+  url: https://www.icgov.org/city-government/departments-and-divisions/senior-center
+
+- title: English Language Discussion Circles
+  organization: Tippie College of Business
+  tags:
+    - conversation
+    - english
+  note: >
+    Free conversation group open to the public. Ideal for intermediate and above. Meets
+  time: Monday&ndash;Thursday 12:30pm&ndash;1:30pm.
+  location:
+    - S126 Pappajohn Business Building
+    - 21 East Market Street
+    - Iowa City, IA 52240
+  url: https://now.uiowa.edu/2013/06/tippie-students-international-blend
+  phone: (319) 335-0859
+
+- title: Old Capitol Toastmasters
+  tags:
+    - speaking
+    - english
+  note: >
+    International speaking club to help build speaking and leadership skills.
+    Membership required to participate; guests welcome. Ideal for advanced speakers.
+  time: Tuesdays from 5:45pm&ndash;6:45pm
+  location:
+    - Masonic Building
+    - 312 East College
+    - Iowa City, IA 52240
+  url: http://164.toastmastersclubs.org/
+
+- title: Crisis Child Care
+  organization: 4Cs of Johnson County
+  note: >
+    Provides short-term emergency care to families in crisis. After hours and
+    weekends call Johnson County Crisis Center at (319) 351-0140. On the phone,
+    state that you need crisis child care.
+  time: Monday&ndash;Friday, 8:30am&ndash;4:30pm
+  phone: (319) 341-0089
+  location:
+    - 1500 Sycamore St
+    - Iowa City, IA 52240
+  url: https://www.iowa4cs.com/crisis-child-care/
+  tags:
+    - childcare
+
+- title: Home Ties
+  organization: 4Cs of Johnson County
+  note: >
+    Offers free, temporary, emergency child care to qualifying families with
+    children ages 6 weeks to 6 years, for up to 3 months; including meals and
+    educational programs.
+  location:
+    - 405 Myrtle Avenue
+    - Iowa City, IA 52246
+  phone: (319) 341-0050
+  url: https://www.iowa4cs.com/home-ties/
+  email: iowa4cshometies@yahoo.com
+  tags:
+    - childcare
+
+- title: Child care assistance
+  organization: Iowa Department of Human Services
+  note: Check online to see if you can qualify for child care assistance.
+  url: https://ccmis.dhs.state.ia.us/MainPortal/Welcome.aspx
+  phone: (866) 448-4605
+  tags:
+    - childcare
+
+
+- title: IowaWorks
+  organization: Iowa Workforce Development
+  note: >
+    Offering free interview practice, resume writing help, computer classes,
+    and more. Call for registration. Ideal for high-intermediate and above.
+  phone: (319) 351-1035
+  tags:
+    - employment
+    - computer skills
+
+- title: Skills to Employment
+  organization: Iowa Workforce Development
+  note: >
+    Free computer classes. Ideal for high-intermediate or higher. Contact Shane
+    Greve for registration.
+  time: June 13&ndash;17, 1pm&ndash;4pm.
+  location:
+    - Iowa City Learning Center
+    - Room 104
+    - 1801 Lower Muscatine Rd.
+    - Iowa City, IA 52240
+  email: shane.greve@iwd.iowa.gov
+  phone: (319) 351-1035,31325
+  tags:
+    - employment
+    - computer skills
+
+- organization: Nisaa African Family Services
+  note: >
+    Offers direct services, including assistance with government forms, legal
+    issues, medical issues, housing, domestic violence and sexual abuse. Contact
+    Sumaya Rabee.
+  location:
+    - 1700 South 1st Avenue, Suite A
+    - Iowa City, IA
+  phone: (319) 333-2453
+  email: sumayarabee@nisaa-afs.org
+  url: http://nisaa-afs.org/programs/
+  tags:
+    - legal
+    - medical
+    - housing
+    - abuse
+
+- organization: Neighborhood Centers of Johnson County
+  note: >
+    Offers preschool programs, before- and after- school programs, youth programs,
+    and family support.
+  location:
+    - 2651 Roberts Rd.
+    - Iowa City, IA
+  phone: (319) 354-2886
+  tags:
+    - childcare
+
+- organization: Neighborhood Centers of Johnson County
+  note: >
+    Offers preschool programs, before- and after- school programs, youth programs,
+    and family support.
+  location:
+    - 2105 Broadway St.
+    - Iowa City, IA
+  phone: (319) 354-7989
+  tags:
+    - childcare
+
+- organization: Refugee and Immigrant Association
+  url: http://refugeeimmigrant.org/services/
+  email: RefugeeIowa@gmail.com
+  phone: (319) 202-0610
+  # This resource should be looked at more closely and broken down into each of
+  # its separate programs.
+
+- title: Food Bank
+  organization: Johnson County Crisis Center
+  note: Offers assistance with food
+  time: MWF, 12:00&ndash;4:30 pm, Tues. 12:00&ndash;7:00 pm, Thurs, 9:30am&ndash;4:30 pm
+  location:
+    - 1121 S Gilbert Ct.
+    - Iowa City, IA 52240
+  phone: (319) 351-0128
+  url: http://jccrisiscenter.org/pages/what-we-do/food-bank.php
+  tags:
+    - food
