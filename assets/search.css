@@ -4,6 +4,7 @@
   display: flex;
   width: min(100%, 50rem);
   margin: 0 auto;
+  margin-bottom: .618033988749894rem
 }
 
 .search input[type="search"] {
