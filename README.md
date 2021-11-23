@@ -52,3 +52,4 @@ complete this project.
 * [mini.css](https://minicss.org/)
 * [Random Material Palette Generator](https://www.threebu.it/random-material-palette/)
 * [Kevin Powell](https://www.youtube.com/watch?v=bn-DQCifeQQ)
+* [Mike Dane](https://www.mikedane.com/web-development/css/styling-search-bar/)
