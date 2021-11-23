@@ -9,9 +9,6 @@
   --ff-title: 'Habibi', serif;
   --ff-header: 'Tinos', serif;
   --ff-base: 'Lora', serif;
-
-  --phi: 1.618033988749894%;
-  --phi-inverse: .618033988749894%;
 }
 
 header { height: min(20%, 2rem)}
