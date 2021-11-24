@@ -8,7 +8,11 @@
   function getMatches(searchString) { return [...document.querySelectorAll(".card")].filter(card => card.innerText.toLowerCase().indexOf(searchString) !== -1) }
   function showCards(cards) { [...cards].forEach(card => { card.classList.remove("card-unmatched"); card.classList.add("card-matched"); }); return cards }
   function hideCards(cards) { [...cards].forEach(card => { card.classList.remove("card-matched"); card.classList.add("card-unmatched"); }); return cards }
-
+  function clearSearch(search) {
+    search.value = "";
+    search.focus();
+    showCards(document.querySelectorAll(".card"));
+  }
   document.addEventListener("DOMContentLoaded", () => {
     const iconClear = document.querySelector("#icon-clear");
     const search = document.querySelector("#site-search");
@@ -19,9 +23,9 @@
     // search when the input field changes
     search.addEventListener("change", event => { hideCards([...document.querySelectorAll(".card")]); showCards(getMatches(event.target.value.toLowerCase())); });
 
-    iconClear.addEventListener("click", () => { search.value = ""; search.focus(); });
+    iconClear.addEventListener("click", () => { clearSearch(search); });
     document.querySelector("body").addEventListener("keydown", e => {
-      if (e.which == 27) { search.value = ""; search.focus(); }
+      if (e.which == 27) { clearSearch(search); }
       else if (e.which == 191) { search.focus(); search.select(); e.preventDefault() }
     });
   });
