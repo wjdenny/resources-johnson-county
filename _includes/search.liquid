@@ -1,0 +1,85 @@
+<div class="search">
+  <span id="icon-search" class="icon-search"></span>
+  <input id="site-search" placeholder="Look for something helpful" type="search" />
+  <img id="icon-clear" src="./assets/x.svg" />
+</div>
+
+<script type="text/javascript">
+  function getMatches(searchString) { return [...document.querySelectorAll(".card")].filter(card => card.innerText.toLowerCase().indexOf(searchString) !== -1) }
+  function showCards(cards) { [...cards].forEach(card => { card.classList.remove("card-unmatched"); card.classList.add("card-matched"); }); return cards }
+  function hideCards(cards) { [...cards].forEach(card => { card.classList.remove("card-matched"); card.classList.add("card-unmatched"); }); return cards }
+  function clearSearch(search) {
+    search.value = "";
+    search.focus();
+    showCards(document.querySelectorAll(".card"));
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    const iconClear = document.querySelector("#icon-clear");
+    const search = document.querySelector("#site-search");
+
+    // show the clear icon when there is text in the box, hide it when empty
+    search.addEventListener("input", event => { iconClear.style.visibility = (event.target.value ? "visible" : "hidden"); });
+
+    // search when the input field changes
+    search.addEventListener("change", event => { hideCards([...document.querySelectorAll(".card")]); showCards(getMatches(event.target.value.toLowerCase())); });
+
+    iconClear.addEventListener("click", () => { clearSearch(search); });
+    document.querySelector("body").addEventListener("keydown", e => {
+      if (e.which == 27) { clearSearch(search); }
+      else if (e.which == 191) { search.focus(); search.select(); e.preventDefault() }
+    });
+  });
+
+</script>
+
+<style type="text/css">
+  /* Stylings for site search */
+  .search {
+    position: relative;
+    display: flex;
+    width: min(100%, 50rem);
+    margin: 0 auto;
+    margin-bottom: .618033988749894rem
+  }
+
+  .search input[type="search"] {
+    margin: 0 auto;
+    border-radius: var(--universal-border-radius);
+    border: 1px solid var(--back-color);
+    outline: 0;
+    width: 100%;
+    padding: 2px 23px 2px 30px;
+    background-color: white;
+  }
+
+  #icon-search {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 15px;
+  }
+
+  #icon-clear {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 15px;
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+  .search input[type="search"]:hover,  .search input[type="search"]:focus {
+    border: 1.5px solid var(--back-color);
+    background-color: white;
+  }
+
+  .card-matched {
+    position: static;
+    opacity: 100%;
+  }
+
+  .card-unmatched {
+    position: absolute;
+    opacity: 0%;
+  }
+</style>

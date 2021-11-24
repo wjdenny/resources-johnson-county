@@ -51,3 +51,5 @@ complete this project.
 * [mini.css](https://minicss.org/)
 * [Random Material Palette Generator](https://www.threebu.it/random-material-palette/)
 * [Kevin Powell](https://www.youtube.com/watch?v=bn-DQCifeQQ)
+* [Mike Dane](https://www.mikedane.com/web-development/css/styling-search-bar/) for advice on styling the directory search bar
+* [Todd Gardner](https://davidwalsh.name/adding-search-to-your-site-with-javascript); even though I decided not to use [Lunr.js](https://lunrjs.com/)
